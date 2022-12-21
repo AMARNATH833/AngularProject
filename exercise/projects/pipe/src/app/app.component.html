@@ -1,0 +1,36 @@
+<h1>Upper case and Lowercase Pipe Example</h1>
+
+{{"From normal to uppercase"}}<br>
+{{upper}}<br>
+{{"This is Example of Upper case :-> "+upper|uppercase}}<br><br>
+
+{{"-------------------------------"}}<br><br>
+{{"This is example of Upper to Lower case Pipe:-> "+lower}}<br>
+{{"This is Example of Lower Case :-> "+lower|lowercase}}<br><br>
+
+{{"-------------------------------"}}<br><br>
+
+<h2>Currency Pipe</h2>
+
+{{currentAmount|currency}}<br>
+{{currentAmount|currency:'INR'}}<br>
+{{currentAmount|currency:'INR':'code'}}<br>
+{{currentAmount|currency:'USD':'code'}}<br><br>
+{{"-------------------------------"}}<br><br>
+
+<h2>Decimal Pipe</h2>
+{{decimal}}<br><br>
+{{decimal|number}}<br><br>
+{{decimal|number:'7.5-5'}}<br><br>
+<!-- {{decimal|number:'2.1-2':'fr'}}<br><br> -->
+<!-- Decimal pipe with locale france 0 005,12346 -->
+
+<h2>Percentage Pipe</h2>
+{{percentage}}<br><br>
+<p>This is my percentage of my Mobile :-> {{percentage}}</p><br>
+{{percentage|percent}}<br><br>
+{{percentage|percent:'7.5-5'}}<br><br>
+
+<strong>Note:For locate type of displaying the output we need to change the source in angular.json</strong>
+
+<h3>CUSTOM PIPES:-> </h3>
